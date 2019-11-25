@@ -6,8 +6,9 @@ def readme():
 
 setup(
     name='lyrics_processor',
+    packages = ['lyrics_processor'], 
     python_requires='>3.7',
-    version='1.0',
+    version='0.1',
     description='Lyrics processing code',
     long_description=readme(),
     classifiers=[
@@ -16,7 +17,8 @@ setup(
         "Operating System :: OS Independent"
     ],
     keywords='lyricsgenius genius lyrics',
-    url='https://github.com/Mitchwatts93/lyrics_processor',
+    url='https://github.com/Mitchwatts93/lyrics_generator',
+    download_url = 'https://github.com/Mitchwatts93/lyrics_generator/archive/v_01.tar.gz',
     author='https://github.com/Mitchwatts93',
     author_email='',
     license='MIT',
