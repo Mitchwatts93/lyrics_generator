@@ -1,1 +1,0 @@
-from lyrics_generator import fetch_lyrics, process_lyrics, write_lyrics_to_file
