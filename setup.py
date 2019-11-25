@@ -6,9 +6,9 @@ def readme():
 
 setup(
     name='lyricsprocessor',
-    packages = ['lyricsprocessor'], 
+    packages = find_namespace_packages(), 
     python_requires='>=3.7',
-    version='0.1.21',
+    version='0.1.28',
     description='Lyrics processing code',
     long_description=readme(),
     classifiers=[
