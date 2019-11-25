@@ -1,5 +1,6 @@
 from pandas import DataFrame
 from lyricsgenius import Genius
+from pandas import read_hdf
 
 def start_genius_api(api_key:str):
     """load the genius api object using client key"""

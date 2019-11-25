@@ -115,7 +115,7 @@ def artist_verse_check(verse_key:str, names_list:list):
 
 def main(api_key:str,
          df,
-         hdf_key:str,
+         hdf_key:str='',
          dropna:bool=True,
          check_lyrics_state:bool=True,
          save_path:str=''):
@@ -139,8 +139,11 @@ def main(api_key:str,
                                                          artist_name=artist_name, alternate_names=alternate_names)
 
     if save_path:
-        save_df(df, save_path, hdf_key)
-
+        if hdf_key:
+            save_df(df, save_path, hdf_key)
+        else:
+            logging.Warning('No HDF key supplied, but save path supplied, saving if hdf key="default"')
+            save_df(df, save_path, 'default')
     return df
 
 ########################################################################################################################
